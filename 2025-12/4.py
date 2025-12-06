@@ -3,7 +3,7 @@
 # Time: 45 mins
 # Solved: Yes
 
-# unoptimized
+# approach-1: Brute-force: time: O(n^2), space: O(1)
 class Solution:
     def countCollisions(self, directions: str) -> int:
         sCount = 0
@@ -34,10 +34,11 @@ class Solution:
 
         return sCount
 
-
 # TIL: if c is moving to right, increase by 1 (chance to hit)
-#   if c is s (stationary), add increased chances
-#  if c is moving to left, add increased chances + 1
+# if c is s (stationary), add increased chances
+# if c is moving to left, add increased chances + 1
 # initially set chance = -1 and set chance to 1 in the first c == R
 # R -> R -> R -> L = 1 -> 2 -> 3 -> result += 3 (chances) + 1 = 4
 
+# approach-2: simulation: time: O(n) space: O(1)
+# @todo

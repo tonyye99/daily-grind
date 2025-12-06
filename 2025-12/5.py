@@ -3,7 +3,7 @@
 # Time: 20 mins
 # Solved: Yes
 
-# my solution - prefix_sums / postfix_sums (but too long)
+# approach-1 - prefix/postfix sums - time: O(n) space: O(n)
 def countPartitions(self, nums: List[int]) -> int:
     n = len(nums)
     prefix_sum = [0] * n
@@ -27,9 +27,12 @@ def countPartitions(self, nums: List[int]) -> int:
 
     return ans
 
+# approach-2 - prefix/postfix sums (optimized) - time: O(n) space: O(1)
+# @todo
+
 # TIL: Mathematically, if total_sum is even, there are all partitions that works, 
 # if total_sum is odd, there are no partition works
-
+# approach-2 - math - time: O(n) space: O(1)
 def countPartitions(self, nums: List[int]) -> int:
     total_sum = sum(nums)
 

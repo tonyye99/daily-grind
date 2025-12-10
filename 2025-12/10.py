@@ -5,6 +5,8 @@
 
 # TIL: since nums[0] is the key, all the other numbers must be greater than nums[0]
 # return the factorial of the length of the array - 1
+# if computer 0's complexity is lower than all others, answer is (n-1)! factorial. 
+# If any computer has complexity ≤ computer 0, return 0
 
 class Solution:
     def countPermutations(self, complexity: List[int]) -> int:

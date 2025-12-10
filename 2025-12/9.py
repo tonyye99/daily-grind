@@ -5,10 +5,10 @@
 
 # TIL: two counts
 # total count, count all occurances of nums
-# left count, count it on the go, then right count = total count - left count
-# ans += right count * left count
+# left count, first count the current left count, save it, then curr right count = total count - curr left count
+# ans += curr right count * curr left count
 class Solution:
-    def specialTriplets(self, nums: List[int]) -> int:
+    def specialTriplets(self, nums: List[int]) -> int:  
         # count = 0
 
         # for i in range(len(nums)):

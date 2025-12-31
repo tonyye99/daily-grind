@@ -1,0 +1,6 @@
+# 840. Magic Squares In Grid
+# Link: https://leetcode.com/problems/magic-squares-in-grid/description/?envType=daily-question&envId=2025-12-30
+# Time: 40+
+# Solved: Yes
+
+# TIL: just brute-force,
